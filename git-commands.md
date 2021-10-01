@@ -39,3 +39,7 @@ git remote add origin git@github.com:puranik3/ps-git-project.git
 ```
 git push --set-upstream origin master
 ```
+10. Thereafter to push the commits from the current local branch to remote, simply push
+```
+git push
+```
