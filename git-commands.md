@@ -1,6 +1,6 @@
 # Getting started with Git and GitHub
 
-1. Create a repository for the project in GitHub / BitBucket / GitLab...
+1. Create a repository for the project in GitHub / BitBucket / GitLab etc. - we get a "remote url" (eg. git@github.com:puranik3/ps-git-project.git)
 2. In the local system, we ask Git the project - we switch to the project folder and we issue the command
 ```
 git init
@@ -13,7 +13,29 @@ git status
 ```
 git add <file> <folder> ...
 ```
-NOTE: You can ask git to track everything in your project this way
+__NOTE__: You can ask git to track everything in your project this way
 ```
 git add .
+```
+__NOTE__: Even after we stage a file (git add), if we change the files, we yet again need to run git add
+5. We commit like so
+```
+git commit -m "commit message"
+```
+You can amend the recent commit this way
+```
+git commit --amend -m "new commit message"
+```
+6. View all the commits
+```
+git log
+```
+7. Use git remote to tie up your local folder to GitHub repo. For example...
+```
+git remote add origin git@github.com:puranik3/ps-git-project.git
+```
+8. When we start a git project, we get 1 branch - master
+9. To tie up the local current branch (master branch) to the remote master branch, we do the following
+```
+git push --set-upstream origin master
 ```
